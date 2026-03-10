@@ -1,18 +1,20 @@
-# LLM Frameworks
-langchain>=0.1.0
-langchain-core
-langchain-community
+# ── Core LLM Framework ──
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-ollama>=0.3.0
 
-# Voice (STT & TTS)
-faster-whisper
-piper-tts
-sounddevice
-SpeechRecognition
-numpy
+# ── Math Safety ──
+asteval
 
-# Common Utilities
+# ── Environment ──
 python-dotenv
-pytest
 
-# Additional Optional Dependencies
-# edge-tts  # (Optional: If we want cloud TTS)
+# ── Voice (STT & TTS) — Phase 3 ──
+# faster-whisper
+# piper-tts
+# sounddevice
+# numpy
+
+# ── Testing ──
+pytest
+pytest-asyncio
