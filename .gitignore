@@ -1,0 +1,36 @@
+# Environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.env
+*.env
+.env.local
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Local Data
+*.db
+*.sqlite3
+
+# IDEs
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+.agent/history/
+.agent/state/
+
+# Audio & Voice Testing
+*.wav
+*.mp3
+*.flac
+*.ogg
+temp_audio/
+
+# Instructions
+INIT_PROJECT.md
