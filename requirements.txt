@@ -1,0 +1,18 @@
+# LLM Frameworks
+langchain>=0.1.0
+langchain-core
+langchain-community
+
+# Voice (STT & TTS)
+faster-whisper
+piper-tts
+sounddevice
+SpeechRecognition
+numpy
+
+# Common Utilities
+python-dotenv
+pytest
+
+# Additional Optional Dependencies
+# edge-tts  # (Optional: If we want cloud TTS)
