@@ -25,5 +25,4 @@ Neo-Atom is a state-of-the-art, voice-activated Personal AI Assistant designed n
    call venv\Scripts\activate.bat
    python src/main.py
    ```
-
-*See `.agent/workflows/Phased_Implementation_Plan.md` for our exact roadmap.*
+   
