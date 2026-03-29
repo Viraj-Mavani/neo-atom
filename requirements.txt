@@ -9,6 +9,9 @@ asteval
 # ── Environment ──
 python-dotenv
 
+# ── Media Key Simulation ──
+pyautogui
+
 # ── Voice (STT & TTS) — Phase 3 ──
 # faster-whisper
 # piper-tts
