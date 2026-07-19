@@ -4,24 +4,32 @@ description: /run command to start the main loop
 
 # Run Assistant
 
-To start the main loop of Neo-Atom, simply follow these steps in your terminal:
+**Full runbook — setup, configuration, testing, troubleshooting: [`_artifact/docs/05-runbook.md`](../../_artifact/docs/05-runbook.md)**
 
-1. **Ensure Environment is Active:**
-   ```bash
-   .\venv\Scripts\activate
+To start the main loop of Neo-Atom:
+
+1. **Activate the environment:**
+   ```bat
+   call venv\Scripts\activate.bat
    ```
 
-2. **Verify Ollama is Running:**
-   Ensure the Ollama application is active in your system tray or run:
+2. **Confirm Ollama is running** (check the system tray, or):
    ```bash
-   ollama run llama3.1:8b
-   # Or whatever model is defined in the .env or client configuration.
+   ollama list
    ```
+   The model must match `OLLAMA_MODEL` in `.env`.
 
-3. **Execute the Entry Point:**
+3. **Execute the entry point:**
    ```bash
    python src/main.py
    ```
 
-## Development Mode
-If you want to run the assistant in CLI text mode only (skipping Voice activation for debugging tools), pass the `--text-only` flag if implemented, or simply test individual modules using `pytest tests/`.
+You should see the banner, then `🟢 Neo-Atom is ready.` Exit with `exit`, `quit`, `bye`, `goodbye`, `stop`, or `Ctrl-C`.
+
+## Development
+
+**Text mode is the only mode** — there is no `--text-only` flag, and none is needed; voice is not implemented. To exercise tools in isolation:
+
+```bash
+pytest tests/ -v
+```
